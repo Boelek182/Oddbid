@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Oddbid</string>
+    <string name="txt_filter">Filter</string>
+    <string name="txt_sort">Sort</string>
+    <string name="txt_popularity">Popularity : %1$s</string>
+    <string name="txt_release_date">Release Date : %1$s</string>
+    <string name="txt_link_official">Link Official :</string>
+    <string name="txt_genre">Genre :\u0020</string>
+    <string name="txt_production_companies">Production Companies :</string>
+    <string name="txt_runtime_minutes">Runtime : %1$s Minute</string>
+    <string name="txt_runtime_hours">Runtime : %1$s Hour</string>
+    <string name="txt_runtime_hours_minutes">Runtime : %1$s Hour, %2$s Minute</string>
+    <string name="txt_revenue">Revenue : US $ %1$s</string>
+    <string name="txt_vote">Vote Average / Vote Count : %1$s / %2$s</string>
+    <string name="txt_language">Spoken Language :</string>
+    <string name="txt_many">| %1$s |</string>
+    <string name="txt_link_home_page"><u>%1$s</u></string>
+    <string name="txt_popularity_asc">Popularity (ASC)</string>
+    <string name="txt_popularity_desc">Popularity (DESC)</string>
+    <string name="txt_release_date_asc">Release Date (ASC)</string>
+    <string name="txt_release_date_desc">Release Date (DESC)</string>
+    <string name="txt_vote_count_asc">Vote Count (ASC)</string>
+    <string name="txt_vote_count_desc">Vote Count (DESC)</string>
+    <string name="txt_dates">Dates</string>
+    <string name="txt_s_d">s / d</string>
+</resources>

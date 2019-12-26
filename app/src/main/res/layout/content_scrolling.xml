@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".feature.view.MovieDetailActivity">
+
+    <ImageView
+        android:id="@+id/imagePoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imagePoster"
+        app:layout_constraintStart_toStartOf="@id/imagePoster"
+        app:layout_constraintTop_toBottomOf="@id/imagePoster"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="Popularity" />
+
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvPopularity"
+        app:layout_constraintStart_toStartOf="@id/tvPopularity"
+        app:layout_constraintTop_toBottomOf="@id/tvPopularity"
+        tools:text="Release Date" />
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_genre"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvReleaseDate"
+        app:layout_constraintStart_toStartOf="@id/tvReleaseDate"
+        app:layout_constraintTop_toBottomOf="@id/tvReleaseDate" />
+
+    <TextView
+        android:id="@+id/tvGenreDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvGenre"
+        app:layout_constraintStart_toStartOf="@id/tvGenre"
+        app:layout_constraintTop_toBottomOf="@id/tvGenre"
+        tools:text="Genre" />
+
+    <TextView
+        android:id="@+id/tvLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_link_official"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvGenreDetail"
+        app:layout_constraintStart_toStartOf="@id/tvGenreDetail"
+        app:layout_constraintTop_toBottomOf="@id/tvGenreDetail" />
+
+    <TextView
+        android:id="@+id/tvLinkDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvLink"
+        app:layout_constraintStart_toStartOf="@id/tvLink"
+        app:layout_constraintTop_toBottomOf="@id/tvLink"
+        tools:text="Link Official" />
+
+    <TextView
+        android:id="@+id/tvProduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_production_companies"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvLinkDetail"
+        app:layout_constraintStart_toStartOf="@id/tvLinkDetail"
+        app:layout_constraintTop_toBottomOf="@id/tvLinkDetail" />
+
+    <TextView
+        android:id="@+id/tvProductionCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Production Companies"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvProduction"
+        app:layout_constraintStart_toStartOf="@id/tvProduction"
+        app:layout_constraintTop_toBottomOf="@id/tvProduction" />
+
+    <TextView
+        android:id="@+id/tvRuntime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvProductionCompany"
+        app:layout_constraintStart_toStartOf="@id/tvProductionCompany"
+        app:layout_constraintTop_toBottomOf="@id/tvProductionCompany"
+        tools:text="Runtime" />
+
+    <TextView
+        android:id="@+id/tvRevenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvRuntime"
+        app:layout_constraintStart_toStartOf="@id/tvRuntime"
+        app:layout_constraintTop_toBottomOf="@id/tvRuntime"
+        tools:text="Revenue" />
+
+    <TextView
+        android:id="@+id/tvVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvRevenue"
+        app:layout_constraintStart_toStartOf="@id/tvRevenue"
+        app:layout_constraintTop_toBottomOf="@id/tvRevenue"
+        tools:text="Vote Average / Vote Count" />
+
+    <TextView
+        android:id="@+id/tvSpokenLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_language"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvVote"
+        app:layout_constraintStart_toStartOf="@id/tvVote"
+        app:layout_constraintTop_toBottomOf="@id/tvVote" />
+
+    <TextView
+        android:id="@+id/tvSpokenLanguageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvSpokenLanguage"
+        app:layout_constraintStart_toStartOf="@id/tvSpokenLanguage"
+        app:layout_constraintTop_toBottomOf="@id/tvSpokenLanguage"
+        tools:text="Spoken Language" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvSpokenLanguageDetail"
+        app:layout_constraintStart_toStartOf="@id/tvSpokenLanguageDetail"
+        app:layout_constraintTop_toBottomOf="@id/tvSpokenLanguageDetail"
+        tools:text="Overview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

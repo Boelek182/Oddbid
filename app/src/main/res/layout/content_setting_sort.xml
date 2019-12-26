@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sortPopularityAsc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/txt_popularity_asc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sortPopularityDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/txt_popularity_desc"
+        app:layout_constraintEnd_toEndOf="@id/sortPopularityAsc"
+        app:layout_constraintStart_toStartOf="@id/sortPopularityAsc"
+        app:layout_constraintTop_toBottomOf="@id/sortPopularityAsc" />
+
+    <TextView
+        android:id="@+id/sortReleaseDateAsc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/txt_release_date_asc"
+        app:layout_constraintEnd_toEndOf="@id/sortPopularityDesc"
+        app:layout_constraintStart_toStartOf="@id/sortPopularityDesc"
+        app:layout_constraintTop_toBottomOf="@id/sortPopularityDesc" />
+
+    <TextView
+        android:id="@+id/sortReleaseDateDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/txt_release_date_desc"
+        app:layout_constraintEnd_toEndOf="@id/sortReleaseDateAsc"
+        app:layout_constraintStart_toStartOf="@id/sortReleaseDateAsc"
+        app:layout_constraintTop_toBottomOf="@id/sortReleaseDateAsc" />
+
+    <TextView
+        android:id="@+id/sortVoteCountAsc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/txt_vote_count_asc"
+        app:layout_constraintEnd_toEndOf="@id/sortReleaseDateDesc"
+        app:layout_constraintStart_toStartOf="@id/sortReleaseDateDesc"
+        app:layout_constraintTop_toBottomOf="@id/sortReleaseDateDesc" />
+
+    <TextView
+        android:id="@+id/sortVoteCountDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/txt_vote_count_desc"
+        app:layout_constraintEnd_toEndOf="@id/sortVoteCountAsc"
+        app:layout_constraintStart_toStartOf="@id/sortVoteCountAsc"
+        app:layout_constraintTop_toBottomOf="@id/sortVoteCountAsc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
